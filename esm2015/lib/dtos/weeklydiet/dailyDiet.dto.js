@@ -1,0 +1,18 @@
+import { __decorate } from "tslib";
+import { Type } from 'class-transformer';
+import { IsArray, IsNumber, IsOptional, ValidateNested, } from 'class-validator';
+import { MealDto } from '../routine/meal.dto';
+export class DailyDietDto {
+    constructor() { }
+}
+__decorate([
+    IsNumber(),
+    IsOptional()
+], DailyDietDto.prototype, "day", void 0);
+__decorate([
+    ValidateNested(),
+    IsArray(),
+    Type(() => MealDto),
+    IsOptional()
+], DailyDietDto.prototype, "meals", void 0);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGFpbHlEaWV0LmR0by5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RzeC1maXRlbG8vc3JjL2xpYi9kdG9zL3dlZWtseWRpZXQvZGFpbHlEaWV0LmR0by50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLElBQUksRUFBRSxNQUFNLG1CQUFtQixDQUFDO0FBQ3pDLE9BQU8sRUFDTCxPQUFPLEVBQ1AsUUFBUSxFQUNSLFVBQVUsRUFDVixjQUFjLEdBQ2YsTUFBTSxpQkFBaUIsQ0FBQztBQUN6QixPQUFPLEVBQUUsT0FBTyxFQUFFLE1BQU0scUJBQXFCLENBQUM7QUFFOUMsTUFBTSxPQUFPLFlBQVk7SUFXdkIsZ0JBQWUsQ0FBQztDQUNqQjtBQVRDO0lBRkMsUUFBUSxFQUFFO0lBQ1YsVUFBVSxFQUFFO3lDQUNBO0FBTWI7SUFKQyxjQUFjLEVBQUU7SUFDaEIsT0FBTyxFQUFFO0lBQ1QsSUFBSSxDQUFDLEdBQUcsRUFBRSxDQUFDLE9BQU8sQ0FBQztJQUNuQixVQUFVLEVBQUU7MkNBQ0siLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBUeXBlIH0gZnJvbSAnY2xhc3MtdHJhbnNmb3JtZXInO1xuaW1wb3J0IHtcbiAgSXNBcnJheSxcbiAgSXNOdW1iZXIsXG4gIElzT3B0aW9uYWwsXG4gIFZhbGlkYXRlTmVzdGVkLFxufSBmcm9tICdjbGFzcy12YWxpZGF0b3InO1xuaW1wb3J0IHsgTWVhbER0byB9IGZyb20gJy4uL3JvdXRpbmUvbWVhbC5kdG8nO1xuXG5leHBvcnQgY2xhc3MgRGFpbHlEaWV0RHRvIHtcbiAgQElzTnVtYmVyKClcbiAgQElzT3B0aW9uYWwoKVxuICBkYXk/OiBudW1iZXI7IC8vIDEgZm9yIG1vbmRheVxuXG4gIEBWYWxpZGF0ZU5lc3RlZCgpXG4gIEBJc0FycmF5KClcbiAgQFR5cGUoKCkgPT4gTWVhbER0bylcbiAgQElzT3B0aW9uYWwoKVxuICBtZWFscz86IE1lYWxEdG9bXTtcblxuICBjb25zdHJ1Y3RvcigpIHt9XG59XG4iXX0=
