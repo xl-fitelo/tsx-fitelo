@@ -1,0 +1,18 @@
+import { __decorate } from "tslib";
+import { Type } from 'class-transformer';
+import { IsArray, IsNumber, IsOptional, ValidateNested, } from 'class-validator';
+import { WorkoutDto } from '../routine/workout.dto';
+export class DailyWorkoutDto {
+    constructor() { }
+}
+__decorate([
+    IsNumber(),
+    IsOptional()
+], DailyWorkoutDto.prototype, "day", void 0);
+__decorate([
+    ValidateNested(),
+    IsArray(),
+    Type(() => WorkoutDto),
+    IsOptional()
+], DailyWorkoutDto.prototype, "workouts", void 0);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGFpbHlXb3Jrb3V0LmR0by5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RzeC1maXRlbG8vc3JjL2xpYi9kdG9zL3dlZWtseXdvcmtvdXQvZGFpbHlXb3Jrb3V0LmR0by50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLElBQUksRUFBRSxNQUFNLG1CQUFtQixDQUFDO0FBQ3pDLE9BQU8sRUFDTCxPQUFPLEVBQ1AsUUFBUSxFQUNSLFVBQVUsRUFDVixjQUFjLEdBQ2YsTUFBTSxpQkFBaUIsQ0FBQztBQUN6QixPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sd0JBQXdCLENBQUM7QUFDcEQsTUFBTSxPQUFPLGVBQWU7SUFXMUIsZ0JBQWUsQ0FBQztDQUNqQjtBQVRDO0lBRkMsUUFBUSxFQUFFO0lBQ1YsVUFBVSxFQUFFOzRDQUNBO0FBTWI7SUFKQyxjQUFjLEVBQUU7SUFDaEIsT0FBTyxFQUFFO0lBQ1QsSUFBSSxDQUFDLEdBQUcsRUFBRSxDQUFDLFVBQVUsQ0FBQztJQUN0QixVQUFVLEVBQUU7aURBQ1ciLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBUeXBlIH0gZnJvbSAnY2xhc3MtdHJhbnNmb3JtZXInO1xuaW1wb3J0IHtcbiAgSXNBcnJheSxcbiAgSXNOdW1iZXIsXG4gIElzT3B0aW9uYWwsXG4gIFZhbGlkYXRlTmVzdGVkLFxufSBmcm9tICdjbGFzcy12YWxpZGF0b3InO1xuaW1wb3J0IHsgV29ya291dER0byB9IGZyb20gJy4uL3JvdXRpbmUvd29ya291dC5kdG8nO1xuZXhwb3J0IGNsYXNzIERhaWx5V29ya291dER0byB7XG4gIEBJc051bWJlcigpXG4gIEBJc09wdGlvbmFsKClcbiAgZGF5PzogbnVtYmVyOyAvLyAxIGZvciBtb25kYXlcblxuICBAVmFsaWRhdGVOZXN0ZWQoKVxuICBASXNBcnJheSgpXG4gIEBUeXBlKCgpID0+IFdvcmtvdXREdG8pXG4gIEBJc09wdGlvbmFsKClcbiAgd29ya291dHM/OiBXb3Jrb3V0RHRvW107XG5cbiAgY29uc3RydWN0b3IoKSB7fVxufVxuIl19
